@@ -1,0 +1,58 @@
+﻿{% extends "basic.html" %}
+{% load static %}
+{% block head %}
+{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <h1 class="display-4">Be your own doctor...</h1>
+  <p class="lead">
+    It might have happened so many times that you or someone yours need doctor’s help immediately,
+    but they are not available due to some reasons.The Disease Prediction system is an end user
+    support and online consultation project. Here, we propose a web application that allow users
+    to get instant guidance on their disease through an intelligent system. The application is
+    fed with various details and the disease associated with those details.
+    {% if user.is_authenticated %}
+    {% else %}
+
+</div>
+
+{% endif %}
+
+
+<!-- Large modal -->
+
+
+<!-- Large modal -->
+
+<div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
+<br></br>
+<br></br>
+<div id="footer" class="card bg-dark text-white">
+  <div class="card-body">
+    <ul>
+      <li>
+        <h5 class="mb-1">Jimma, Oromia, Ethiopia</h5>
+        <div class="footer-copyright text-center">© 2022 Copyright:
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+{% endblock %}
